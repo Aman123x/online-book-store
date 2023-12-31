@@ -21,7 +21,7 @@ const Navbar = ({ setData }) => {
   async function fetchInitialData(searchResult) {
     try {
       const response = await axios.get(
-        `https://www.googleapis.com/books/v1/volumes?q=${searchResult}&key=AIzaSyCn3L5HhuNI5WWHb-oOe8mPfhs2XtZB6mk`
+        `https://www.googleapis.com/books/v1/volumes?q=${searchResult}&key=${process.env.REACT_APP_GOOGLE_BOOK_API_KEY}`
       );
   
       // Extract the new items from the response
@@ -47,7 +47,7 @@ const Navbar = ({ setData }) => {
 
   async function fetchData(searchResult){
     try{
-        const response= await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchResult}&key=AIzaSyCn3L5HhuNI5WWHb-oOe8mPfhs2XtZB6mk`)
+        const response= await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchResult}&key=${process.env.REACT_APP_GOOGLE_BOOK_API_KEY}`)
 
         console.log(response.data);
         setData(response.data);
