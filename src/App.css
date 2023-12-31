@@ -22,6 +22,7 @@ body {
   height: 299.216px;
   flex-shrink: 0;
   margin: 20px;
+  cursor: pointer;
 }
 
 .card h4 {
@@ -60,4 +61,5 @@ body {
   margin-left: 20px;
   background-color: transparent;
   border: 1px solid white;
+  cursor: pointer;
 }
