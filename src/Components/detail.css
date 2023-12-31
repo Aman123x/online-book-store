@@ -1,0 +1,59 @@
+.book {
+  display: flex;
+  background-color: rgba(171, 113, 244, 0.38);
+  margin-right: 20px;
+}
+
+.book_ {
+  margin-inline: 20px;
+}
+
+.book_ > h1 {
+  color: #fff;
+}
+
+.bookDetail {
+  margin-block: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bookDetail > p:nth-child(1) {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.book_>p:nth-child(3){
+    color: rgba(255, 255, 255, 0.50);
+    font-weight: 400;
+}
+
+.span{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 10px;
+}
+
+.mainSpan{
+    display: flex;
+    gap: 5px;
+    margin-right: 5px;
+}
+
+span{
+    color: #E2E2E2;
+font-size: 16px;
+font-weight: 700;
+}
+
+.bttn>button{
+    padding: 6px 15px;
+    margin-right: 8px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+

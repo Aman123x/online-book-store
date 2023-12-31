@@ -5,13 +5,16 @@ import BookList from './Components/BookList';
 
 const App=()=> {
 
-  const [data,setData]=useState("");
+  const [data,setData]=useState([]);
+  // const [id,setId]=useState("");
+  //console.log(id);
   
 
   return (
     <div>
       <Navbar setData={setData}/>
-      <BookList data={data}/>
+      {/* <detail id={id}/> */}
+      <BookList bookData={data}/>
     </div>
   );
 }
